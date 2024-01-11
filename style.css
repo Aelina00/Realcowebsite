@@ -966,3 +966,6 @@ img {
 .menu-link:hover {
   color: var(--color-blue-200);
 }
+.logo img{
+  max-width: 105px;
+  }
