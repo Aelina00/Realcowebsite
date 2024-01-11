@@ -849,4 +849,12 @@ margin-bottom: 96px;
     transform: translate(500%);
   }
 }
+.media .sec_p{
+margin: 0 auto;
+color: #2A2C1F;
+margin-bottom: 30px;
+}
+.media{
+  padding-top: 70px;
+}
     
