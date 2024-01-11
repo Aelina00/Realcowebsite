@@ -691,6 +691,7 @@ margin-bottom: 96px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
   width: 416px;
   padding: 33px;
+  margin: 0 auto;
   margin-bottom: 16px;
   }
   .location_card:hover{
@@ -714,6 +715,14 @@ margin-bottom: 96px;
   .location .btns{
     margin-top: 80px;
     justify-content: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 16px; */
+  }
+  .location_cards{
+    flex: 33.3% 1 1
   }
     
     
