@@ -1051,3 +1051,22 @@ img {
   column-gap: 0.75rem;
   padding: 0.75rem 1rem;
 }
+.search-input {
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+  height: auto;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  color: var(--color-black);
+  background-color: var(--color-light);
+}
+.search-input::-webkit-search-decoration, .search-input::-webkit-search-cancel-button {
+  display: none;
+  visibility: hidden;
+}
