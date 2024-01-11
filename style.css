@@ -663,7 +663,20 @@ text-align: center;
 transition: 0.3s;
 margin-bottom: 96px;
 }
-
+  
+/* location */
+.location_card{
+  border-radius: 16px;
+  border: 1px solid #E7E8E3;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  width: 416px;
+  padding: 33px;
+  margin-bottom: 16px;
+  }
+  .location_card:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
     
     
     
