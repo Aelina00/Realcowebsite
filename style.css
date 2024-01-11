@@ -681,6 +681,8 @@ margin-bottom: 96px;
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    margin-bottom: 128px;
+
   }
   .location_card{
   border-radius: 16px;
@@ -704,9 +706,6 @@ margin-bottom: 96px;
   .location_card .link_btn{
   padding: 0;
   }
-  .location_col{
-    gap: 16px;
-  }
   .location .sec_p{
     margin-bottom: 80px;
   }
@@ -723,5 +722,120 @@ margin-bottom: 96px;
     flex: 33.3% 1 1
   }
     
+ /* number of elements */
+.location .container {
+  --d: 15s;
+  /* duration */
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  /* number of visible elements + width */
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+}
+
+.location .container > div {
+  grid-area: 1/1;
+  /* display: grid; */
+  grid-template-columns: 120px 1fr;
+  align-content: center;
+  gap: 10px;
+  background: #fff padding-box;
+  border-inline: 10px solid #f3f2f200;
+  animation: r var(--d) linear infinite;
+}
+
+.location .container > div img {
+  width: 100%;
+  grid-row: span 2;
+}
+
+.location .container > div * {
+  margin: 0;
+}
+
+.location .container > div .location_tit {
+  margin-top: auto;
+}
+
+.location .container > div:nth-child(2) {
+  animation-delay: calc(-0.1666666667*var(--d));
+}
+
+.location .container > div:nth-child(3) {
+  animation-delay: calc(-0.3333333333*var(--d));
+}
+
+.location .container > div:nth-child(4) {
+  animation-delay: calc(-0.5*var(--d));
+}
+
+.location .container > div:nth-child(5) {
+  animation-delay: calc(-0.6666666667*var(--d));
+}
+
+.location .container > div:nth-child(6) {
+  animation-delay: calc(-0.8333333333*var(--d));
+}
+
+@keyframes r {
+  16.6666666667% {
+    transform: translate(-100%);
+  }
+  16.6766666667% {
+    transform: translate(500%);
+  }
+}
+
+
+.location_tit{
+  color: #2A2C1F;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px; 
+  }
+  .location_card .link_btn{
+  padding: 0;
+  }
+  .link_btn{
+      padding: 8px;
+      border-radius: 6px;
+  }
+  .location_card{
+      border-radius: 16px;
+      border: 1px solid #E7E8E3;
+      background: #FFF;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+      width: 416px;
+      padding: 33px;
+      margin-bottom: 16px;
+      }
+      .location_card:hover{
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      }
+      .location{
+        background-color: #f5f5f7;
+      }
+      .location .btns{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 128px;
     
+      }
+      .location_card{
+      border-radius: 16px;
+      border: 1px solid #E7E8E3;
+      background: #FFF;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+      width: 416px;
+      padding: 33px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+      }
+      .location_card:hover{
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      }
+      .location .container{
+          padding-top: 100px;
+      }   
     
