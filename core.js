@@ -62,3 +62,11 @@ if (burgerMenu && bgOverlay) {
       bgOverlay.classList.toggle("is-active");
    });
 }
+// Close Navbar Menu on Links Click
+document.querySelectorAll(".menu-link").forEach((link) => {
+    link.addEventListener("click", () => {
+       navbarMenu.classList.remove("is-active");
+       bgOverlay.classList.remove("is-active");
+    });
+ });
+
