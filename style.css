@@ -684,11 +684,9 @@ section {
   width: 55%;
 }
 .dark-gray-section .btn{
-padding: 14px 25px;
 display: block;
 margin: 20px auto;
 text-align: center; 
-transition: 0.3s;
 margin-bottom: 96px;
 }
   
@@ -1190,3 +1188,6 @@ max-width: 105px;
   display: none;
   visibility: hidden;
 }
+
+
+
