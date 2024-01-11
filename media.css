@@ -101,4 +101,8 @@
     .menu-block {
         margin-left: 2rem;
     }
+    .burger {
+        display: none;
+        visibility: hidden;
+    }
 }
