@@ -637,6 +637,7 @@ section {
   transform: translateY(50%);
   text-align: center;
   margin-bottom: 400px;
+  padding: 0;
 }
 .dark-icon {
   margin-top: 100px;
