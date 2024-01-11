@@ -98,4 +98,7 @@
     .menu-link {
         text-transform: capitalize;
     }
+    .menu-block {
+        margin-left: 2rem;
+    }
 }
