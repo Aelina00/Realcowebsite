@@ -985,3 +985,14 @@ img {
   border: 1px solid #E7E8E3;
   background: #FFF;
 }
+.burger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  order: -1;
+  width: 1.6rem;
+  height: auto;
+  border: none;
+  outline: none;
+  visibility: visible;
+}
