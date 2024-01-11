@@ -90,4 +90,9 @@
         background: none;
         box-shadow: none;
     }
+    .menu-inner {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
 }
