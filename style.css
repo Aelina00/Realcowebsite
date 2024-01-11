@@ -678,6 +678,7 @@ margin-bottom: 96px;
     background-color: #f5f5f7;
   }
   .location .btns{
+    display: flex;
     justify-content: center;
     margin-top: 80px;
   }
