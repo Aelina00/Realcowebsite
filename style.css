@@ -969,3 +969,19 @@ img {
 .logo img{
   max-width: 105px;
   }
+  .menu a{
+    padding: 9px 16px;
+  }
+  .shop:hover {
+    background: #383737;
+    border-color: #383737;
+    color: #FFF;
+    transition: all 1s ease-in-out;
+    border-radius: 40% 20% / 50% 20%;
+  }
+  .shop{
+  padding: 9px 21px;
+  border-radius: 6px;
+  border: 1px solid #E7E8E3;
+  background: #FFF;
+  }
