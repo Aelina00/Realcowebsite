@@ -858,3 +858,14 @@ margin-bottom: 40px;
   padding-top: 70px;
 }
     
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100000000;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-medium);
+}
