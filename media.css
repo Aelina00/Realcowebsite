@@ -95,4 +95,7 @@
         flex-direction: row;
         margin: 0 auto;
     }
+    .menu-link {
+        text-transform: capitalize;
+    }
 }
