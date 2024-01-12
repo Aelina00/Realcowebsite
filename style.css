@@ -1187,3 +1187,17 @@ header .overlay.is-active {
   line-height: 30px;
   margin: 21px 0;
 }
+.span{
+  text-align: center;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 21px; 
+  background: #E7E8E3;
+  border-radius: 32px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.intro_form{
+  display: flex;
+  gap: 16px;
+}
