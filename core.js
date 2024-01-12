@@ -117,3 +117,7 @@ signInButton.addEventListener('click', () => {
 function imgSlider(anything) {
 document.querySelector('.property').src = anything;
 }
+function changeBgColor(color) {
+    const bg = document.querySelector('.bg');
+    bg.style.background = color;
+  }
