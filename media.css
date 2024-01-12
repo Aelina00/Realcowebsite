@@ -118,4 +118,7 @@
         margin-top: 100px;
         flex-direction: column;
     }
+    .intro .content .textBox {
+        max-width: 100%;
+    }
 }
