@@ -1221,3 +1221,25 @@ header .overlay.is-active {
 .intro_label input::placeholder{
   color: #65665C;
 }
+.intro_btn{
+  display: inline-block;
+    width: 158px;
+  padding: 9px 18px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px; 
+  border-radius: 6px;
+  border: 1px solid #CF6F49;
+  background-color: #CF6F49;
+  transition: 0.3s; 
+}
+.intro_btn:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background: #383737;
+    border-color: #383737;
+    color: #FFF;
+}
+section.intro{
+  padding: 0;
+}
