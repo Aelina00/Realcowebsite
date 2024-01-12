@@ -1084,4 +1084,14 @@ header .overlay.is-active {
   display: none;
   visibility: hidden;
 }
-
+/* intro */
+.intro section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
