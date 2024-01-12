@@ -107,5 +107,7 @@
     }
 }
 @media (max-width: 991px) {
-    
+    .intro .bg::before {
+        display: none;
+    }
 }
