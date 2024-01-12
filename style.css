@@ -1211,3 +1211,13 @@ header .overlay.is-active {
   padding: 9px 19px;
   gap: 19px;
 }
+.intro_label input{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px; 
+  border: none;
+  outline: none;
+}
+.intro_label input::placeholder{
+  color: #65665C;
+}
