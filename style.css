@@ -1326,3 +1326,70 @@ header .overlay.is-active {
   display: none;
   visibility: hidden;
 }
+/* works */
+.works .sec_p{
+  margin-bottom: 64px;
+  }
+  .works_cards{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .works_card{
+    position: relative;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid #E7E8E3;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 16px;
+    margin: 0 -45px;
+    transform: rotate(calc(var(--r) * 1deg));
+    padding: 48px 34px;
+  }
+  .works_cards:hover .works_card{
+    transform: rotate(0deg);
+    margin: 0 20px;
+  }
+  .works_card::before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .works_card i{
+    width: 48px;
+    height: 48px;
+    display: block;
+    border-radius: 8px;
+    background: #FAE8E1;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .works_tit{
+    color: #2A2C1F;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  .works_p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px; 
+    width: 320px;
+  }
+  .works_ic span {
+    color: #CF6F49;
+  }
