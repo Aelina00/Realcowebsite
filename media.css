@@ -110,4 +110,8 @@
     .intro .bg::before {
         display: none;
     }
+    .intro section {
+        padding: 20px;
+        padding-bottom: 120px;
+    }
 }
