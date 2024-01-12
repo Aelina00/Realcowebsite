@@ -1177,3 +1177,7 @@ header .overlay.is-active {
 .intro .thumb li img {
   max-width: 60px;
 }
+.intro_tit{
+  font-size: 56px;
+  line-height: 67.2px;
+}
