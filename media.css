@@ -106,6 +106,7 @@
         visibility: hidden;
     }
 }
+/*responsice*/
 @media (max-width: 991px) {
     .intro .bg::before {
         display: none;
@@ -141,4 +142,4 @@
         left: 0;
         font-size: 6em;
     }
-}
+  }

@@ -74,10 +74,10 @@
             </div>
         </nav>
     </header>
-    <section class="intro">
-        <div class="bg"></div>
+    <section class=" intro">
+        <div class="back"></div>
         <div class="content">
-            <div class="textBox">
+          <div class="textBox">
                 <div class="span">Find your dream place</div>
                 <div class="intro_tit">Find house for your family in minutes</div>
                 <p class="intro_p">Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus.</p>
@@ -90,15 +90,53 @@
                     </label>
                     <button class="intro_btn">Find property</button>
                 </form>
+          </div>
+          <div class="imgBox">
+            <img src="img/mainleft.jpg" class="property">
+          </div>
+            <!-- <div class="textbox">
+                <div class="span">Comfort first</div>
+                    <div class="sec_tit">The best houses for family comfort</div>
+                    <p class="sec_p">Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin sollicitudin, lorem non posuere blandit.</p>
+                    <div class="btns flex">
+                       <a href="" class="btn btn__white">Explore properties</a>
+                       <a href="" class="link_btn">Contact agent <span class="material-symbols-outlined">
+                        chevron_right
+                        </span></a>
+                </div>
             </div>
-            <div class="imgBox">
-                <img src="img/mainleft.jpg" class="property">
-            </div>
+            <div class="texbox">
+                <div class="span">Quick and easy</div>
+                    <div class="sec_tit">Fast forward processt</div>
+                    <p class="sec_p">Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis sit amet mi arcu praesent nec felis nisl.</p>
+                    <div class="fast_cards flex">
+                        <div class="link">
+                            <i class="fast_ic"><span class="material-symbols-outlined">
+                                payments
+                                </span></i>
+                            <h3 class="list">Affordable prices</h3>
+                            <p class="submenuItems">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                        <div class="link">
+                            <i class="fast_ic"><span class="material-symbols-outlined">
+                                description
+                                </span></i>
+                            <h3 class="list">Less paper work</h3>
+                            <p class="submenuItems">Curabitur porta luctus semper donec eget lobortis leo ac finibus nisi.</p>
+                        </div>
+                    </div>
+                    <div class="btns flex">
+                        <a href="" class="btn btn__white">Explore properties</a>
+                        <a href="" class="link_btn">Contact agent <span class="material-symbols-outlined">
+                            chevron_right
+                            </span></a>
+                    </div>
+            </div> -->
         </div>
         <ul class="thumb">
-            <li data-text="Find house" class="active"><img src="img/mainleft.jpg" onclick="imgSlider('img/mainleft.jpg'); changeBgColor('#f5f5f7')"></li>
-            <li data-text="Comfort first"><img src="img/houses.jpg" onclick="imgSlider('img/houses.jpg'); changeBgColor('#ccc3bb')"></li>
-            <li data-text="Quick and ease"><img src="img/fast.jpg" onclick="imgSlider('img/fast.jpg'); changeBgColor('#f3e1d8')"></li>
+          <li data-text="Find house" class="active"><img src="img/mainleft.jpg" onclick="imgSlider('img/mainleft.jpg'); changeBgColor('#f5f5f7')"></li>
+          <li data-text="Comfort first" class="hover"><img src="img/houses.jpg" onclick="imgSlider('img/houses.jpg'); changeBgColor('#ccc3bb')"></li>
+          <li data-text="Quick and ease" class="dynamic"><img src="img/fast.jpg" onclick="imgSlider('img/fast.jpg'); changeBgColor('#f3e1d8')"></li>
         </ul>
     </section>
     <section class="media">
@@ -213,6 +251,42 @@
             </div>
         </div>
     </section> 
+    <section class="works">
+        <div class="container">
+            <div class="sec_tit">How it works</div>
+            <p class="sec_p">Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id efficitur pellentesque. Maecenas varius felis felis.</p>
+            <div class="works_cards">
+                <div class="works_card" style="--r: 15;" data-text="Home">
+                    <div class="card">
+                        <i class="works_ic"><span class="material-symbols-outlined">
+                            home</span>
+                        </i>
+                        <h3 class="works_tit">Find property</h3>
+                        <p class="works_p">Odales mauris quis tellus facilisis, vel mattis magna interdum. Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non.</p>
+                    </div>
+                </div>
+                <div class="works_card" style="--r: 5;" data-text="receipt">
+                    <div class="card">
+                        <i class="works_ic"><span class="material-symbols-outlined">
+                            receipt
+                        </span></i>
+                        <h3 class="works_tit">Make a deal</h3>
+                        <p class="works_p">Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius, urna nisi sollicitudin orci, sagittis facilisis odio tortor ac mi.</p>
+                    </div>
+                </div>
+                <div class="works_card" style="--r: 25;" data-text="key">
+                    <div class="card">
+                        <i class="works_ic"><span class="material-symbols-outlined">
+                            key
+                        </span></i>
+                        <h3 class="works_tit">Get your keys</h3>
+                        <p class="works_p">Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum. Duis semper, metus vitae fermentum consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </div>
+    </section>
     <section class="area">
         <div class="container">
             <div class="area_img_right">
