@@ -464,6 +464,7 @@ margin-bottom: 40px;
   margin: 0 auto;
   margin-bottom: 20px;
   transition: 0.3s; 
+  
   }
   .area_img_right{
       margin-bottom: 18px;
@@ -691,6 +692,7 @@ margin-bottom: 40px;
       }
       .posts .span{
         margin-bottom: 25px;
+        color: #000;
       }
       .posts_card_top .span{
         background-color:#FAE8E1;
@@ -1141,7 +1143,8 @@ img {
   background-color: var(--color-white);
   box-shadow: var(--shadow-medium);
 }
-.btn {
+/* header */
+/* .btn {
   width: 174px;
   padding: 9px 18px;
   color: #FFF;
@@ -1151,11 +1154,11 @@ img {
   border-radius: 6px;
   border: 1px solid #CF6F49;
   background: #CF6F49;
-}
+} */
 .menu a{
 	padding: 9px 16px;
 }
-.btns{
+/* .btns{
   gap: 16px;
   align-items: center;
 }
@@ -1166,7 +1169,7 @@ img {
 	color: #FFF;
   transition: all 1s ease-in-out;
   border-radius: 40% 20% / 50% 20%;
-}
+} */
 .shop:hover {
 	background: #383737;
 	border-color: #383737;
@@ -1280,7 +1283,7 @@ max-width: 105px;
   }
 }
 
-.overlay {
+header .overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1292,7 +1295,7 @@ max-width: 105px;
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 0.3s ease-in-out;
 }
-.overlay.is-active {
+header .overlay.is-active {
   display: block;
   opacity: 1;
   visibility: visible;
@@ -1561,6 +1564,4 @@ max-width: 105px;
   left: 0;
   bottom: -1rem;
   }
-  
-
   
