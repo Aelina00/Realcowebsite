@@ -125,4 +125,20 @@
         max-width: 100%;
         justify-content: center;
     }
+    .intro .content .imgBox img {
+        max-width: 300px;
+    }
+    .intro .thumb li {
+        margin: 0 3px;
+        height: 55px;
+    }
+    .intro .thumb li img {
+         max-width: 40px;
+    }
+    .intro .thumb li::before {
+        position: absolute;
+        top: -150px;
+        left: 0;
+        font-size: 6em;
+    }
 }
