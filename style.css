@@ -1143,3 +1143,18 @@ header .overlay.is-active {
   transform: translateX(-50%);
   display: flex;
 }
+.intro .thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border: 2px solid rgba(255,255,255,0.25);
+}
+
+.intro .thumb li.active {
+  border: 2px solid rgba(255,255,255,1);
+}
