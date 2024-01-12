@@ -1174,3 +1174,6 @@ header .overlay.is-active {
 .intro .thumb li.active::before {
   opacity: 1;
 }
+.intro .thumb li img {
+  max-width: 60px;
+}
