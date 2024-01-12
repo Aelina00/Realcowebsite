@@ -1158,3 +1158,19 @@ header .overlay.is-active {
 .intro .thumb li.active {
   border: 2px solid rgba(255,255,255,1);
 }
+.intro .thumb li::before {
+  position: absolute;
+  top: -200px;
+  left: -100px;
+  content: attr(data-text);
+  white-space: nowrap;
+  font-size: 8em;
+  color: rgba(0,0,0,0.05);
+  opacity: 0;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.intro .thumb li.active::before {
+  opacity: 1;
+}
