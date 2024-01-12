@@ -1121,3 +1121,7 @@ header .overlay.is-active {
   justify-content: center;
   align-items: center;
 }
+.intro .content .textBox {
+  position: relative;
+  max-width: 600px;
+}
