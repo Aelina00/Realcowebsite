@@ -121,4 +121,8 @@
     .intro .content .textBox {
         max-width: 100%;
     }
+    .intro .content .imgBox {
+        max-width: 100%;
+        justify-content: center;
+    }
 }
