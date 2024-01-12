@@ -1181,3 +1181,9 @@ header .overlay.is-active {
   font-size: 56px;
   line-height: 67.2px;
 }
+.intro_p{
+  color: #65665C;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 21px 0;
+}
