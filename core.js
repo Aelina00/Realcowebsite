@@ -62,13 +62,14 @@ if (burgerMenu && bgOverlay) {
       bgOverlay.classList.toggle("is-active");
    });
 }
+
 // Close Navbar Menu on Links Click
 document.querySelectorAll(".menu-link").forEach((link) => {
-    link.addEventListener("click", () => {
-       navbarMenu.classList.remove("is-active");
-       bgOverlay.classList.remove("is-active");
-    });
- });
+   link.addEventListener("click", () => {
+      navbarMenu.classList.remove("is-active");
+      bgOverlay.classList.remove("is-active");
+   });
+});
 
 // Open and Close Search Bar Toggle
 const searchBlock = document.querySelector(".search-block");
@@ -84,6 +85,7 @@ if (searchToggle && searchCancel) {
       searchBlock.classList.remove("is-active");
    });
 }
+
 // btn
 function update_position(e) {
 	let _t = e.target;
@@ -131,6 +133,12 @@ for(let i = 0; i < el.length; i++) {
     el[i].className = 'check active'
   }
 }
+
+
+ 
+
+
+// comment
 
 (function($) { "use strict";
 

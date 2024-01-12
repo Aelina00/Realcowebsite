@@ -1129,10 +1129,11 @@ img {
   image-rendering: crisp-edges;
 }
 
+
 .header {
-  /* position: fixed;
+  position: fixed;
   left: 0;
-  top: 0; */
+  top: 0;
   width: 100%;
   height: auto;
   z-index: 100000000;
@@ -1140,7 +1141,17 @@ img {
   background-color: var(--color-white);
   box-shadow: var(--shadow-medium);
 }
-/* header */
+.btn {
+  width: 174px;
+  padding: 9px 18px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px; 
+  border-radius: 6px;
+  border: 1px solid #CF6F49;
+  background: #CF6F49;
+}
 .menu a{
 	padding: 9px 16px;
 }
@@ -1148,14 +1159,22 @@ img {
   gap: 16px;
   align-items: center;
 }
+.btn:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	background: #383737;
+	border-color: #383737;
+	color: #FFF;
+  transition: all 1s ease-in-out;
+  border-radius: 40% 20% / 50% 20%;
+}
 .shop:hover {
 	background: #383737;
 	border-color: #383737;
 	color: #FFF;
+  transition: all 1s ease-in-out;
   border-radius: 40% 20% / 50% 20%;
 }
 .shop{
-transition: all 1s ease-in-out;
 padding: 9px 21px;
 border-radius: 6px;
 border: 1px solid #E7E8E3;
@@ -1261,7 +1280,7 @@ max-width: 105px;
   }
 }
 
-/* header.overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1272,8 +1291,8 @@ max-width: 105px;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 0.3s ease-in-out;
-} */
-header .overlay.is-active {
+}
+.overlay.is-active {
   display: block;
   opacity: 1;
   visibility: visible;
@@ -1394,4 +1413,154 @@ header .overlay.is-active {
     color: #CF6F49;
   }
 
- 
+  .fab-wrapper {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    }
+  .fab-checkbox {
+    display: none;
+  }
+  .fab {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    width: 4rem;
+    height: 4rem;
+    background: #CF6F49;
+    border-radius: 50%;
+    background: #d6815f;
+    box-shadow: 0px 5px 20px #db967b;
+    transition: all 0.3s ease;
+    z-index: 1;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #CF6F49;
+  }
+  .fab-checkbox:checked ~ .fab:before {
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .fab:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background: #E7E8E3;
+    box-shadow: 0px 5px 20px 5px #db967b;
+  }
+    
+  .fab-dots {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateX(0%) translateY(-50%) rotate(0deg);
+    opacity: 1;
+    animation: blink 3s ease infinite;
+    transition: all 0.3s ease;
+  }
+    
+  .fab-dots-1 {
+    left: 15px;
+    animation-delay: 0s;
+  }
+  .fab-dots-2 {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation-delay: 0.4s;
+  }
+  .fab-dots-3 {
+    right: 15px;
+    animation-delay: 0.8s;
+  }
+    
+  .fab-checkbox:checked ~ .fab .fab-dots {
+    height: 6px;
+  }
+    
+  .fab .fab-dots-2 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+    
+  .fab-checkbox:checked ~ .fab .fab-dots-1 {
+    width: 32px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+  .fab-checkbox:checked ~ .fab .fab-dots-3 {
+    width: 32px;
+    border-radius: 10px;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%) rotate(-45deg);
+  }
+    
+  @keyframes blink {
+    50% {
+    opacity: 0.25;
+    }
+  }
+    
+  .fab-checkbox:checked ~ .fab .fab-dots {
+    animation: none;
+  }
+    
+  .fab-wheel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10rem;
+    height: 10rem;
+    transition: all 0.3s ease;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+  .fab-checkbox:checked ~ .fab-wheel {
+    transform: scale(1);
+  }
+  .fab-action {
+    position: absolute;
+    background: #d6815f;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: White;
+    box-shadow: 0 0.1rem 1rem #db967b;
+    transition: all 1s ease;
+    opacity: 0;
+  }
+    
+  .fab-checkbox:checked ~ .fab-wheel .fab-action {
+    opacity: 1;
+  }
+    
+  .fab-action:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f16100;
+  }
+    
+  .fab-wheel .fab-action-1 {
+  right: -1rem;
+    top: 0;
+  }
+    
+  .fab-wheel .fab-action-2 {
+    right: 3.4rem;
+    top: 0.5rem;
+  }
+  .fab-wheel .fab-action-3 {
+  left: 0.5rem;
+  bottom: 3.4rem;
+  }
+  .fab-wheel .fab-action-4 {
+  left: 0;
+  bottom: -1rem;
+  }
+  
+
+  
